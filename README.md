@@ -108,7 +108,7 @@ Dataset splits attempt to balance genres across all sets, as well as preserve co
 
 To cite the treebank please refer to the following paper:
 
-  * Zeldes, Amir, Speransky, Nina, Wagner, Nicholas & Schroeder, Caroline T. (2025). "A UD Treebank for Bohairic Coptic". ArXiv preprint.
+  * Zeldes, Amir, Speransky, Nina, Wagner, Nicholas & Schroeder, Caroline T. (2025). ["A UD Treebank for Bohairic Coptic"](https://arxiv.org/abs/2504.18386). ArXiv preprint.
 
 ```bibtex
 @Electronic{ZeldesEtAl2025,
@@ -116,7 +116,8 @@ To cite the treebank please refer to the following paper:
                   Nicholas Wagner and Caroline T. Schroeder},
   title        = {A {UD} Treebank for {B}ohairic {C}optic},
   howpublished = {Arxiv Preprint},
-  year         = {2025}
+  year         = {2025},
+  url          = {https://arxiv.org/abs/2504.18386}
 }
 ```
 
