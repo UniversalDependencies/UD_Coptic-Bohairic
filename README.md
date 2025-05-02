@@ -112,7 +112,7 @@ To cite the treebank please refer to the following paper:
 
 ```bibtex
 @Electronic{ZeldesEtAl2025,
-  author       = {Amir Zeldes and Nina Speransky and 
+  author       = {Amir Zeldes and Nina Speransky and
                   Nicholas Wagner and Caroline T. Schroeder},
   title        = {A {UD} Treebank for {B}ohairic {C}optic},
   howpublished = {Arxiv Preprint},
@@ -140,7 +140,7 @@ XPOS: manual native
 Features: automatic
 Relations: manual native
 Genre: bible fiction nonfiction
-Contributors: Zeldes, Amir; Speransky Nina
+Contributors: Zeldes, Amir; Speransky, Nina
 Contributing: elsewhere
 Contact: amir.zeldes@georgetown.edu
 
