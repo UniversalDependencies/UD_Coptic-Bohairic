@@ -1,13 +1,17 @@
 Running the following version of UD tools:
-commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
+commit 26e6c87a2f518322d15901a351199b6be6569062
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 9 21:07:42 2025 +0200
+Date:   Fri Nov 7 15:39:58 2025 +0100
 Evaluating the following revision of UD_Coptic-Bohairic:
-commit 971c6f4b1e9421f68141d31244c4616c6112a368
+commit 66d3deeaf15e1636eea1a1ea65d845650ef385b2
+Merge: 4d98bc3 41532c5
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 9 21:46:27 2025 +0200
-Size: counted 32724 of 32724 words (nodes).
-Size: min(0, log((N/1000)**2)) = 6.9762175073029.
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'cop_bohairic'
+Language code (from CoNLL-U file name) = 'cop'
+Found the following data files: cop_bohairic-ud-dev.conllu, cop_bohairic-ud-test.conllu, cop_bohairic-ud-train.conllu
+Size: counted 32723 of 32723 words (nodes).
+Size: min(0, log((N/1000)**2)) = 6.97615638914622.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Found more than 10000 training words.
 Split: Did not find at least 10000 development words.
@@ -15,37 +19,55 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 1.
 Universal POS tags: 15 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 16371 out of 32724 total words have one or more features.
+Features: 16988 out of 32723 total words have one or more features.
 Features: source of annotation (from README) factor is 0.4.
 Universal relations: 32 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
-Udapi:
-               TOTAL       4733
-Udapi: found 4733 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 32724 words.
 Genres: found 3 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang cop --max-err=10 UD_Coptic-Bohairic/cop_bohairic-ud-dev.conllu
-[Line 330 Sent bohairic_mark-bohairic_Mark_05_s0008 Node 10]: [L3 Warning fixed-gap] Gaps in fixed expression [10, 15] 'ⲉⲃⲟⲗ * * * * ϧⲉⲛ'
-Warnings: 1
+[Line 338 Sent bohairic_mark-bohairic_Mark_05_s0008]: [L3 Warning fixed-gap] Gaps in fixed expression [10, 15] 'ⲉⲃⲟⲗ * * * * ϧⲉⲛ'
+[Line 1507 Sent bohairic_mark-bohairic_Mark_05_s0034]: [L3 Warning pron-det-without-prontype] The word 'ⲡⲉ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1533 Sent bohairic_mark-bohairic_Mark_05_s0034]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2024 Sent bohairic_mark-bohairic_Mark_06_s0002]: [L3 Warning pron-det-without-prontype] The word 'ⲩ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 3629 Sent bohairic_mark-bohairic_Mark_06_s0036]: [L3 Warning obl-should-be-nmod] The parent (node [12] 'ⲓⲟϩⲓ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+Warnings: 5
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang cop --max-err=10 UD_Coptic-Bohairic/cop_bohairic-ud-test.conllu
+[Line 152 Sent bohairic_mark-bohairic_Mark_01_s0004]: [L3 Warning obl-should-be-nmod] The parent (node [18] 'ⲱⲙⲥ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 156 Sent bohairic_mark-bohairic_Mark_01_s0004]: [L3 Warning pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 183 Sent bohairic_mark-bohairic_Mark_01_s0005]: [L3 Warning obl-should-be-nmod] The parent (node [11] 'ⲓⲟⲩⲇⲉⲁ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 225 Sent bohairic_mark-bohairic_Mark_01_s0006]: [L3 Warning pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 810 Sent bohairic_mark-bohairic_Mark_01_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲛⲑⲱⲟⲩ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1898 Sent bohairic_mark-bohairic_Mark_01_s0045]: [L3 Warning pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2026 Sent bohairic_mark-bohairic_Mark_02_s0003]: [L3 Warning pron-det-without-prontype] The word 'ⲣⲱⲙⲓ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2844 Sent bohairic_mark-bohairic_Mark_02_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲡⲁⲧϣⲉⲗⲉⲧ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 3045 Sent bohairic_mark-bohairic_Mark_02_s0023]: [L3 Warning pron-det-without-prontype] The word 'ⲩ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4429 Sent bohairic_mark-bohairic_Mark_03_s0029]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'DET' but it lacks the 'PronType' feature
+...suppressing further errors regarding Warning
+Warnings: 17
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang cop --max-err=10 UD_Coptic-Bohairic/cop_bohairic-ud-train.conllu
-[Line 10019 Sent bohairic_life_isaac-bohairic_life_isaac01_s0007 Node 14]: [L3 Warning fixed-gap] Gaps in fixed expression [14, 16] 'ⲉⲃⲟⲗ * ϧⲉⲛ'
-[Line 16437 Sent bohairic_life_isaac-bohairic_life_isaac01_s0126 Node 28]: [L3 Warning fixed-gap] Gaps in fixed expression [28, 30] 'ⲉⲃⲟⲗ * ϧⲉⲛ'
-[Line 21193 Sent bohairic_lausiac_history-bohairic_lausiac_history_01_s0068 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 3] 'ⲉⲃⲟⲗ * ϩⲓⲧⲉⲛ'
-[Line 23116 Sent bohairic_lausiac_history-bohairic_lausiac_history_01_s0107 Node 16]: [L3 Warning fixed-gap] Gaps in fixed expression [16, 18] 'ⲥⲁϧⲟⲩⲛ * ⲙⲙⲱ'
-Warnings: 4
+[Line 400 Sent bohairic_mark-bohairic_Mark_07_s0009]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉⲧⲉⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 543 Sent bohairic_mark-bohairic_Mark_07_s0013]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉⲧⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1236 Sent bohairic_mark-bohairic_Mark_07_s0029]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 4116 Sent bohairic_mark-bohairic_Mark_09_s0018]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4255 Sent bohairic_mark-bohairic_Mark_09_s0020]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4434 Sent bohairic_mark-bohairic_Mark_09_s0024]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲁ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4968 Sent bohairic_mark-bohairic_Mark_09_s0036]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲟⲩ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 5143 Sent bohairic_mark-bohairic_Mark_09_s0039]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 6960 Sent bohairic_1corinthians-bohairic_1Cor_06_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲛⲑⲱⲧⲉⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 6961 Sent bohairic_1corinthians-bohairic_1Cor_06_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲫⲱⲧⲉⲧⲉⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+...suppressing further errors regarding Warning
+Warnings: 51
 *** PASSED ***
 Validity: 1
-(weight=0.0769230769230769) * (score{features}=0.4) = 0.0307692307692308
-(weight=0.0769230769230769) * (score{genres}=0.166666666666667) = 0.0128205128205128
-(weight=0.0769230769230769) * (score{lemmas}=1) = 0.0769230769230769
-(weight=0.256410256410256) * (score{size}=0.504955461329752) = 0.129475759315321
-(weight=0.0512820512820513) * (score{split}=0.67) = 0.0343589743589744
-(weight=0.0769230769230769) * (score{tags}=0.705882352941177) = 0.0542986425339367
-(weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
-(weight=0.0769230769230769) * (score{udeprels}=0.864864864864865) = 0.0665280665280665
-(TOTAL score=0.408251186326042) * (availability=1) * (validity=1) = 0.408251186326042
-STARS = 2
-UD_Coptic-Bohairic	0.408251186326042	2
+(weight=0.111111111111111) * (score{features}=0.4) = 0.0444444444444444
+(weight=0.111111111111111) * (score{genres}=0.166666666666667) = 0.0185185185185185
+(weight=0.111111111111111) * (score{lemmas}=1) = 0.111111111111111
+(weight=0.37037037037037) * (score{size}=0.504951037450053) = 0.187018902759279
+(weight=0.0740740740740741) * (score{split}=0.67) = 0.0496296296296296
+(weight=0.111111111111111) * (score{tags}=0.705882352941177) = 0.0784313725490196
+(weight=0.111111111111111) * (score{udeprels}=0.864864864864865) = 0.0960960960960961
+(TOTAL score=0.585250075108098) * (availability=1) * (validity=1) = 0.585250075108098
+STARS = 3
+UD_Coptic-Bohairic	0.585250075108098	3
