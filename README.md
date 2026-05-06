@@ -108,20 +108,33 @@ Dataset splits attempt to balance genres across all sets, as well as preserve co
 
 To cite the treebank please refer to the following paper:
 
-  * Zeldes, Amir, Speransky, Nina, Wagner, Nicholas & Schroeder, Caroline T. (2025). ["A UD Treebank for Bohairic Coptic"](https://arxiv.org/abs/2504.18386). ArXiv preprint.
+  * Zeldes, Amir, Speransky, Nina, Wagner, Nicholas & Schroeder, Caroline T. (2025). ["A UD Treebank for Bohairic Coptic"](https://aclanthology.org/2025.udw-1.7/). In _Proceedings of the Eighth Workshop on Universal Dependencies (UDW, SyntaxFest 2025)_, Ljubljana, Slovenia, 59–69.
 
 ```bibtex
-@Electronic{ZeldesEtAl2025,
-  author       = {Amir Zeldes and Nina Speransky and
-                  Nicholas Wagner and Caroline T. Schroeder},
-  title        = {A {UD} Treebank for {B}ohairic {C}optic},
-  howpublished = {Arxiv Preprint},
-  year         = {2025},
-  url          = {https://arxiv.org/abs/2504.18386}
+@inproceedings{zeldes-etal-2025-ud,
+    title = "A {UD} Treebank for Bohairic {C}optic",
+    author = "Zeldes, Amir  and
+      Speransky, Nina  and
+      Wagner, Nicholas E.  and
+      Schroeder, Caroline T.",
+    editor = {Bouma, Gosse  and
+      {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i}},
+    booktitle = "Proceedings of the Eighth Workshop on Universal Dependencies (UDW, SyntaxFest 2025)",
+    month = aug,
+    year = "2025",
+    address = "Ljubljana, Slovenia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.udw-1.7/",
+    pages = "59--69",
+    ISBN = "979-8-89176-292-3"
 }
 ```
 
 # Changelog
+
+  * 2026-05-15 v2.18
+
+Added Emph=Yes and numerous corrections.
 
   * 2025-05-15 v2.16
 
