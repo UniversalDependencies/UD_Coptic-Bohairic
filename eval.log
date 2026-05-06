@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Coptic-Bohairic:
-commit 66d3deeaf15e1636eea1a1ea65d845650ef385b2
-Merge: 4d98bc3 41532c5
+commit f318c025fd8ddb295afc8a717693b86a1c6d0f79
+Merge: 9cf2705 18139f5
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'cop_bohairic'
@@ -19,46 +19,48 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 1.
 Universal POS tags: 15 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 16988 out of 32723 total words have one or more features.
+Features: 17061 out of 32723 total words have one or more features.
 Features: source of annotation (from README) factor is 0.4.
 Universal relations: 32 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
 Genres: found 3 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang cop --max-err=10 UD_Coptic-Bohairic/cop_bohairic-ud-dev.conllu
-[Line 338 Sent bohairic_mark-bohairic_Mark_05_s0008]: [L3 Warning fixed-gap] Gaps in fixed expression [10, 15] 'ⲉⲃⲟⲗ * * * * ϧⲉⲛ'
-[Line 1507 Sent bohairic_mark-bohairic_Mark_05_s0034]: [L3 Warning pron-det-without-prontype] The word 'ⲡⲉ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 1533 Sent bohairic_mark-bohairic_Mark_05_s0034]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 2024 Sent bohairic_mark-bohairic_Mark_06_s0002]: [L3 Warning pron-det-without-prontype] The word 'ⲩ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 3629 Sent bohairic_mark-bohairic_Mark_06_s0036]: [L3 Warning obl-should-be-nmod] The parent (node [12] 'ⲓⲟϩⲓ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-Warnings: 5
+[Line 338 Sent bohairic_mark-bohairic_Mark_05_s0008]: [L3 WARNING fixed-gap] Gaps in fixed expression [10, 15] 'ⲉⲃⲟⲗ * * * * ϧⲉⲛ'
+[Line 1507 Sent bohairic_mark-bohairic_Mark_05_s0034]: [L3 WARNING pron-det-without-prontype] The word 'ⲡⲉ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1533 Sent bohairic_mark-bohairic_Mark_05_s0034]: [L3 WARNING pron-det-without-prontype] The word 'ⲧⲉ' is tagged 'DET' but it lacks the 'PronType' feature
+Warnings: 3
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang cop --max-err=10 UD_Coptic-Bohairic/cop_bohairic-ud-test.conllu
-[Line 152 Sent bohairic_mark-bohairic_Mark_01_s0004]: [L3 Warning obl-should-be-nmod] The parent (node [18] 'ⲱⲙⲥ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 156 Sent bohairic_mark-bohairic_Mark_01_s0004]: [L3 Warning pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 183 Sent bohairic_mark-bohairic_Mark_01_s0005]: [L3 Warning obl-should-be-nmod] The parent (node [11] 'ⲓⲟⲩⲇⲉⲁ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 225 Sent bohairic_mark-bohairic_Mark_01_s0006]: [L3 Warning pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 810 Sent bohairic_mark-bohairic_Mark_01_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲛⲑⲱⲟⲩ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 1898 Sent bohairic_mark-bohairic_Mark_01_s0045]: [L3 Warning pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 2026 Sent bohairic_mark-bohairic_Mark_02_s0003]: [L3 Warning pron-det-without-prontype] The word 'ⲣⲱⲙⲓ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 2844 Sent bohairic_mark-bohairic_Mark_02_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲡⲁⲧϣⲉⲗⲉⲧ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 3045 Sent bohairic_mark-bohairic_Mark_02_s0023]: [L3 Warning pron-det-without-prontype] The word 'ⲩ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 4429 Sent bohairic_mark-bohairic_Mark_03_s0029]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'DET' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-Warnings: 17
+[Line 156 Sent bohairic_mark-bohairic_Mark_01_s0004]: [L3 WARNING pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 225 Sent bohairic_mark-bohairic_Mark_01_s0006]: [L3 WARNING pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 810 Sent bohairic_mark-bohairic_Mark_01_s0019]: [L3 WARNING pron-det-without-prontype] The word 'ⲛⲑⲱⲟⲩ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1898 Sent bohairic_mark-bohairic_Mark_01_s0045]: [L3 WARNING pron-det-without-prontype] The word 'ϩⲁⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2026 Sent bohairic_mark-bohairic_Mark_02_s0003]: [L3 WARNING pron-det-without-prontype] The word 'ⲣⲱⲙⲓ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2844 Sent bohairic_mark-bohairic_Mark_02_s0019]: [L3 WARNING pron-det-without-prontype] The word 'ⲡⲁⲧϣⲉⲗⲉⲧ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 3045 Sent bohairic_mark-bohairic_Mark_02_s0023]: [L3 WARNING pron-det-without-prontype] The word 'ⲩ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4429 Sent bohairic_mark-bohairic_Mark_03_s0029]: [L3 WARNING pron-det-without-prontype] The word 'ϥ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 8120 Sent bohairic_1corinthians-bohairic_1Cor_04_s0018]: [L3 WARNING pron-det-without-prontype] The word 'ⲧⲉⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 9577 Sent bohairic_life_shenoute-bohairic_life_shenoute_01_s0008]: [L3 WARNING pron-det-without-prontype] The word 'ⲟⲩ' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+Warnings: 13
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang cop --max-err=10 UD_Coptic-Bohairic/cop_bohairic-ud-train.conllu
-[Line 400 Sent bohairic_mark-bohairic_Mark_07_s0009]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉⲧⲉⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 543 Sent bohairic_mark-bohairic_Mark_07_s0013]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉⲧⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 1236 Sent bohairic_mark-bohairic_Mark_07_s0029]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲉ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 4116 Sent bohairic_mark-bohairic_Mark_09_s0018]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 4255 Sent bohairic_mark-bohairic_Mark_09_s0020]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 4434 Sent bohairic_mark-bohairic_Mark_09_s0024]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲁ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 4968 Sent bohairic_mark-bohairic_Mark_09_s0036]: [L3 Warning pron-det-without-prontype] The word 'ⲧⲟⲩ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 5143 Sent bohairic_mark-bohairic_Mark_09_s0039]: [L3 Warning pron-det-without-prontype] The word 'ϥ' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 6960 Sent bohairic_1corinthians-bohairic_1Cor_06_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲛⲑⲱⲧⲉⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 6961 Sent bohairic_1corinthians-bohairic_1Cor_06_s0019]: [L3 Warning pron-det-without-prontype] The word 'ⲫⲱⲧⲉⲧⲉⲛ' is tagged 'DET' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-Warnings: 51
+[Line 400 Sent bohairic_mark-bohairic_Mark_07_s0009]: [L3 WARNING pron-det-without-prontype] The word 'ⲧⲉⲧⲉⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 543 Sent bohairic_mark-bohairic_Mark_07_s0013]: [L3 WARNING pron-det-without-prontype] The word 'ⲧⲉⲧⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 1236 Sent bohairic_mark-bohairic_Mark_07_s0029]: [L3 WARNING pron-det-without-prontype] The word 'ⲧⲉ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 4116 Sent bohairic_mark-bohairic_Mark_09_s0018]: [L3 WARNING pron-det-without-prontype] The word 'ϥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4255 Sent bohairic_mark-bohairic_Mark_09_s0020]: [L3 WARNING pron-det-without-prontype] The word 'ϥ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4434 Sent bohairic_mark-bohairic_Mark_09_s0024]: [L3 WARNING pron-det-without-prontype] The word 'ⲧⲁ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 4968 Sent bohairic_mark-bohairic_Mark_09_s0036]: [L3 WARNING pron-det-without-prontype] The word 'ⲧⲟⲩ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 5143 Sent bohairic_mark-bohairic_Mark_09_s0039]: [L3 WARNING pron-det-without-prontype] The word 'ϥ' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 6960 Sent bohairic_1corinthians-bohairic_1Cor_06_s0019]: [L3 WARNING pron-det-without-prontype] The word 'ⲛⲑⲱⲧⲉⲛ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 6961 Sent bohairic_1corinthians-bohairic_1Cor_06_s0019]: [L3 WARNING pron-det-without-prontype] The word 'ⲫⲱⲧⲉⲧⲉⲛ' is tagged 'DET' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 10236 Sent bohairic_life_isaac-bohairic_life_isaac01_s0007]: [L3 WARNING fixed-gap] Gaps in fixed expression [14, 16] 'ⲉⲃⲟⲗ * ϧⲉⲛ'
+[Line 16654 Sent bohairic_life_isaac-bohairic_life_isaac01_s0126]: [L3 WARNING fixed-gap] Gaps in fixed expression [28, 30] 'ⲉⲃⲟⲗ * ϧⲉⲛ'
+[Line 21410 Sent bohairic_lausiac-bohairic_lausiac_01_s0068]: [L3 WARNING fixed-gap] Gaps in fixed expression [1, 3] 'ⲉⲃⲟⲗ * ϩⲓⲧⲉⲛ'
+[Line 23333 Sent bohairic_lausiac-bohairic_lausiac_01_s0107]: [L3 WARNING fixed-gap] Gaps in fixed expression [16, 18] 'ⲥⲁϧⲟⲩⲛ * ⲙⲙⲱ'
+Warnings: 48
 *** PASSED ***
 Validity: 1
 (weight=0.111111111111111) * (score{features}=0.4) = 0.0444444444444444
