@@ -147,7 +147,7 @@ Data source: manual
 Data available since: UD v2.16
 License: CC BY 4.0
 Includes text: yes
-Parallel: no
+Parallel: bible
 Lemmas: manual native
 UPOS: converted from manual
 XPOS: manual native
